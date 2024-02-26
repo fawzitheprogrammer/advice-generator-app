@@ -2,6 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 
 
+*{
+    margin: 0px 10px;
+}
+
 body {
     display: flex;
     justify-content: center; /* align horizontal */
@@ -16,8 +20,8 @@ body {
 .attribution a { color: hsl(228, 45%, 44%); }
 
 .advice-container {
-    width: 400px;
-    height: 400px;
+    width: 500px;
+    height: 300px;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -34,7 +38,7 @@ body {
     font-size: 14px;
     letter-spacing: 4px;
     padding: 0px;
-    margin: 0px;
+    margin-bottom: 10px;
     font-weight: 300;
 }
 
@@ -45,6 +49,7 @@ body {
     font-weight: 800;
     justify-content: center;
     text-align: center;
+    margin-bottom: 30px;
 }
 
 .divider-parent {
@@ -65,18 +70,18 @@ body {
 
 .dice {
     position: absolute;
-    bottom: -30px; /* Adjust as necessary */
-    left: 50%; /* Center horizontally */
+    bottom: -25px; /* Adjust as necessary */
+    left:49%; /* Center horizontally */
     transform: translateX(-50%);
     background-color: hsl(150, 100%, 66%);
     border-radius: 100px;
-    width: auto;
-    padding: auto;
-    height: 80px;
+    width: 70px;
+    height: 70px;
+    border: none;
     z-index: 3;
-    display: flex;
-    flex-direction: column;
+    display: inline-flex;
     justify-content: center;
+    align-items: center;
     transition: all 0.2s ease-in-out;
 }
 
@@ -92,5 +97,11 @@ body {
 
     .advice-content {
         font-size: 1rem;
+    }
+
+    .dice {
+        height: 50px;
+        width: 50px;
+        left: 47%;
     }
 }
