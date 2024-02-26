@@ -16,4 +16,4 @@ async function fetchAdvices(){
 
 }
 
-window.onload = fetchAdvices;
+window.onload = fetchAdvices();
