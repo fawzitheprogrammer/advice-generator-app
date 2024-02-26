@@ -11,10 +11,10 @@ async function fetchAdvices(){
 
   if(res.status==200){
     adviceId.textContent = `ADVICE #${id}`;
-  adviceContent.textContent = `“${advice}”`;
+    adviceContent.textContent = `“${advice}”`;
   }
 
 }
 
 
-
+fetchAdvices();
