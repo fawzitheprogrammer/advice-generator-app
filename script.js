@@ -17,5 +17,4 @@ async function fetchAdvices(){
 }
 
 
-fetchAdvices();
 
